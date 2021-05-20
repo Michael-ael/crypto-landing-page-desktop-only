@@ -1,38 +1,174 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('http://fonts.cdnfonts.com/css/hanson');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  background: #8E9BDC;
+}
+
+.container{
+  max-width: 1250px;
+  margin: 50px auto;
+  overflow: auto;
+  padding: 0px 0px;
+  background: url(images/bg.png) center center no-repeat;
+  border-radius: 20px;
+  min-height: 500px;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+img{
+  width: 100%;
+}
+
+.container1{
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 17px 20px;
+}
+
+nav{
+  background: url(images/hero-bg.png) center center no-repeat;
+  height: 60px;
+  background-size: cover;
+}
+
+nav .logo{
+  max-width: 50px;
+  display: flex;
+  color: #fff;
+}
+
+nav .logo h2{
+  font-family: 'hanson', sans-serif;
+  font-size: 15px;
+  font-weight:900;
+  letter-spacing: 2px;
+}
+
+nav .container1 .flex{
+  justify-content: space-between;
+}
+
+nav .container1 ul{
+  display: flex;
+  list-style: none;
+}
+
+
+
+nav .container1 ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 10px;
+  padding: 0px 8px;
+}
+
+nav .container1 ul li a.started{
+   background: #8859EC;
+   color: #fff;
+   padding: 3px 10px;
+   border-radius: 5px;
+   position: relative;
+   bottom: 3px;
+   margin-right: 5px;
+}
+
+.main{
+  margin-top: 3rem;
+}
+
+.main .container1 .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.main .container1 .left-side{
+  width: 495px;
+  height: 295px;
+}
+
+.main .container1 .left-side p.top{
+  font-size: 13px;
+  font-weight: lighter;
+  color: #dadada;
+  width: 182px;
+  line-height: 16.9px;
+}
+
+.main .container1 .left-side h3{
+  display: inline-block;
+  align-items: center;
+  font-size: 50px;
+  line-height: 65px;
+  color: #fff;
+  width: 495px;
+  font-weight: 600;
+}
+
+.main .container1 .left-side h3 span.next{
+  position: relative;
+  top: 13px;
+}
+
+.main .container1 .left-side p.bottom{
+  width: 413px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+  line-height: 27px;
+  padding: 10px 15px 0px 0px;
+}
+
+.main .container1 .left-side p.bottom span.text{
+  color: #8859EC;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  font-family: 'hanson', sans-serif;
+}
+
+.main .container1 .right-side{
+  max-width: 348px;
+  height: 347px;
+  margin-left: 50px;
+}
+
+footer{
+  margin-top: 2rem;
+  background: url(images/footer.png)center center no-repeat;
+  height: 291px;
+  background-size: cover;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer .connect{
+  position: relative;
+  bottom: 40px;
+  left: -60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer img{
+  height: 275px;
+  width: 1020px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
